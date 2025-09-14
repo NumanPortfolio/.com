@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Numan | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <h1 class="logo">Numan</h1>
+    <nav class="nav">
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+      <a href="https://www.linkedin.com/in/numan-khalid-1931a0228" target="_blank">LinkedIn</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero fade-in">
+      <div class="hero-text">
+        <h2>Hi, I'm <span>Numan</span></h2>
+        <h3>Frontend Developer</h3>
+        <p>I create responsive, professional, and modern websites with HTML, CSS, and JavaScript.</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn">View Projects</a>
+          <a href="mailto:chnuman1010@gmail.com" class="btn-outline">Hire Me</a>
+        </div>
+      </div>
+      <div class="hero-img">
+        <img src="https://media.licdn.com/dms/image/v2/D4D03AQGiLTJ10mqe_A/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1719077932077?e=2147483647&v=beta&t=qRKmpDlFsUEMA1mNnQCbKMeZx9ZPi6oshEep7nj4uQQ" alt="Numan profile" />
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="card fade-in">
+      <h3>Services</h3>
+      <div class="grid">
+        <div class="service">Responsive Web Design</div>
+        <div class="service">Frontend Development</div>
+        <div class="service">Portfolio Websites</div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="card fade-in">
+      <h3>Projects</h3>
+      <div class="grid">
+        <div class="project">
+          <a href="https://www.carzstore.pk" target="_blank">
+            <img src="Screenshot (55).png" alt="Carzone" />
+          </a>
+          <h4>Carzone</h4>
+          <p>A modern and responsive car marketplace (frontend & design).</p>
+        </div>
+        <div class="project">
+          <a href="https://www.hcshop.com.pk" target="_blank">
+            <img src="Screenshot (56).png" alt="Healthcare" />
+          </a>
+          <h4>Healthcare</h4>
+          <p>Accessible healthcare site focused on clear UX.</p>
+        </div>
+        <div class="project">
+          <a href="https://clickmepakistan.com" target="_blank">
+            <img src="Screenshot (57).png" alt="Clickme" />
+          </a>
+          <h4>Clickme</h4>
+          <p>An interactive platform emphasizing simplicity.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Experience -->
+    <section id="experience" class="card fade-in">
+      <h3>Work Experience</h3>
+      <div class="experience">
+        <h4>Frontend Developer — Carzone</h4>
+        <p class="period">Nov 2024 - Feb 2025</p>
+        <p>Built responsive interfaces, created reusable components, and improved cross-browser compatibility.</p>
+      </div>
+      <div class="experience">
+        <h4>Frontend Developer — Healthcare</h4>
+        <p class="period">Apr 2025 - Jul 2025</p>
+        <p>Created a healthcare web app with user-friendly design and optimized performance.</p>
+      </div>
+      <div class="experience">
+        <h4>Frontend Developer — Clickme</h4>
+        <p class="period">May 2024 - Aug 2024</p>
+        <p>Worked on a social platform, enhancing UI and improving responsiveness.</p>
+      </div>
+      <div class="experience">
+        <h4>Frontend Developer — Tech Solutions</h4>
+        <p class="period">Sep 2023 - Dec 2023</p>
+        <p>Developed landing pages and dashboards for client projects with pixel-perfect design.</p>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="card fade-in">
+      <h3>People talk about me</h3>
+      <div class="grid">
+        <blockquote>“Delivered an excellent website with a clean design and smooth user experience.” — Ahmad Ali</blockquote>
+        <blockquote>“Professional, responsive, and highly skilled in frontend development.” — Fatima Bloch</blockquote>
+        <blockquote>“Great work! Completed the project on time with outstanding quality.” — David</blockquote>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="card contact fade-in">
+      <h3>Let’s make something amazing together</h3>
+      <p>
+        Start by saying hi — <a href="mailto:chnuman1010@gmail.com">chnuman1010@gmail.com</a>
+      </p>
+      <form id="contactForm" action="https://formspree.io/f/xandzwpb" method="POST">
+        <input type="text" name="name" placeholder="Your name" required />
+        <input type="email" name="email" placeholder="Your email" required />
+        <textarea name="message" rows="4" placeholder="Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Numan. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,284 @@
+ /* =============================
+   Global Styles
+============================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #0d0d0d;
+  color: #f5f5f5;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.3s;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 600;
+}
+
+main {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 80px;
+}
+
+/* =============================
+   Header / Navbar
+============================= */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #0d0d0d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  z-index: 1000;
+  transition: 0.3s ease-in-out;
+}
+
+.header.scrolled {
+  background: #1a1a1a;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #e50914;
+}
+
+.nav a {
+  margin-left: 25px;
+  font-size: 1rem;
+  color: #f5f5f5;
+  position: relative;
+}
+
+.nav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -5px;
+  background: #e50914;
+  transition: width 0.3s;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+/* =============================
+   Hero Section
+============================= */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 0;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h2 {
+  font-size: 2.5rem;
+}
+
+.hero-text h2 span {
+  color: #e50914;
+}
+
+.hero-text h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: #ccc;
+}
+
+.hero-text p {
+  margin-bottom: 20px;
+  color: #ddd;
+}
+
+.hero-buttons .btn,
+.hero-buttons .btn-outline {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 30px;
+  margin-right: 15px;
+  transition: 0.3s;
+}
+
+.btn {
+  background: #e50914;
+  color: white;
+}
+
+.btn:hover {
+  background: #b0060f;
+}
+
+.btn-outline {
+  border: 2px solid #e50914;
+  color: #e50914;
+}
+
+.btn-outline:hover {
+  background: #e50914;
+  color: white;
+}
+
+.hero-img {
+  flex: 1;
+  text-align: center;
+}
+
+/* =============================
+   Cards / Sections
+============================= */
+.card {
+  background: #1a1a1a;
+  margin: 40px 0;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+}
+
+.card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #e50914;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.service, .project, blockquote {
+  background: #262626;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.service:hover, .project:hover, blockquote:hover {
+  transform: translateY(-8px);
+}
+
+.experience {
+  margin-bottom: 20px;
+}
+
+.experience h4 {
+  color: #f5f5f5;
+}
+
+.period {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin: 5px 0 10px 0;
+}
+
+/* =============================
+   Contact Form
+============================= */
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: #262626;
+  color: #f5f5f5;
+  font-size: 1rem;
+}
+
+.contact button {
+  background: #e50914;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact button:hover {
+  background: #b0060f;
+}
+
+/* =============================
+   Footer
+============================= */
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  color: #aaa;
+  border-top: 1px solid #262626;
+}
+
+/* =============================
+   Animations
+============================= */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-in-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* =============================
+   Responsive
+============================= */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav a {
+    margin: 10px;
+  }
+}
